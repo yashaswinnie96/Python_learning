@@ -39,7 +39,7 @@ else:
   print("Please choose a number between 0 to 2")
 
 computer_choice = random.randint(0,2)
-# print(computer_choice)
+print(f"Computer chose: {computer_choice}")
 if computer_choice == 0:
   print("Computer chose: " + rock)
 elif computer_choice == 1:
@@ -50,6 +50,8 @@ else:
 #decide who won 
 if (user_input == 2 and computer_choice == 0) or (user_input == 1 and computer_choice == 2) or (user_input == 0 and computer_choice == 1):
   print("You Lose")
+elif user_input == computer_choice:
+  print("It's a draw")  
 else:
   print("You Won")
   
