@@ -39,5 +39,5 @@ jobs:
 #        pytest
     - name: Run my python script
       run: |
-        python paper_rock_scissors.py
+        python hello_world.py
     
